@@ -13,13 +13,13 @@ export default {
 
 <template>
 
-    <section id="our-products" class="d-flex ai-center">
+    <section id="our-products" class="d-flex">
 
         <div class="text">
 
             <h5>our products</h5>
 
-            <h2>All our delectable pastries are backed fresh in our Kitchen very morning, and are made wuith all natural, all organic ingredients.</h2>
+            <h2 class="title-section">All our delectable pastries are backed fresh in our Kitchen very morning, and are made wuith all natural, all organic ingredients.</h2>
 
             <a class="a-button" href="#">start shopping</a>
 
@@ -37,15 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     justify-content: space-between;
     .text {
         width: 400px;
-        h2 {
-            font-size: 30px;
-            margin: 30px 0;
-            color: $firstColor;
-        }
         .a-button {
             color: $fifthColor;
             background-color: $firstColor;

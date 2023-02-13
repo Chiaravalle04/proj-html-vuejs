@@ -1,11 +1,13 @@
 <script>
 import MainSectionOne from './MainSectionOne.vue';
+import MainSectionTwo from './MainSectionTwo.vue';
 
 export default {
     name: 'AppMain',
 
     components: {
         MainSectionOne,
+        MainSectionTwo,
     }
 }
 </script>
@@ -17,6 +19,8 @@ export default {
         <div class="main-container">
 
             <MainSectionOne/>
+
+            <MainSectionTwo/>
 
         </div>
 

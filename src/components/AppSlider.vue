@@ -115,7 +115,7 @@ export default {
     height: 80px;
     font-size: 20px;
     color: $fifthColor;
-    background-color: $firstColor;
+    background-color: rgba(85, 50, 139, 0.5);
     border: none;
     cursor: pointer;
     position: absolute;
