@@ -1,6 +1,7 @@
 <script>
 import MainSectionOne from './MainSectionOne.vue';
 import MainSectionTwo from './MainSectionTwo.vue';
+import MainSectionThree from './MainSectionThree.vue';
 
 export default {
     name: 'AppMain',
@@ -8,6 +9,7 @@ export default {
     components: {
         MainSectionOne,
         MainSectionTwo,
+        MainSectionThree,
     }
 }
 </script>
@@ -21,6 +23,8 @@ export default {
             <MainSectionOne/>
 
             <MainSectionTwo/>
+
+            <MainSectionThree/>
 
         </div>
 
