@@ -126,6 +126,11 @@ section {
                     color: $firstColor;
                     background-color: $fifthColor;
                     padding: 0 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: $secondColor;
+                        background-color: $firstColor;
+                    }
                 }
             }
         }

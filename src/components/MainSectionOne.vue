@@ -45,6 +45,11 @@ section {
             color: $fifthColor;
             background-color: $firstColor;
             padding: 0 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $firstColor;
+                background-color: $secondColor;
+            }
         }
     }
     .slider-section-one {

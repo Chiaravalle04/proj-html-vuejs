@@ -13,42 +13,52 @@ export default {
                 {
                     url: 'src/assets/img/choco-chip-cookies-400x510.jpg',
                     name: 'Choco Chip Cookies',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/strawberry-jam-cookies-400x510.jpg',
                     name: 'Strawberry Jam Cookies',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/cherry-cake-400x510.jpg',
                     name: 'Cherry Cake',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/blackberry-stuffed-bread-400x510.jpg',
                     name: 'Blackberry Stuffed Bread',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/cookies-with-ice-cream-400x510.jpg',
                     name: 'Cookies With Ice Cream',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/glazed-pancake-with-lemon-400x510.jpg',
                     name: 'Glazed Pancake With Lemon',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/home-bread-400x510.jpg',
                     name: 'Home Bread',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/perfect-macarons-400x510.jpg',
                     name: 'Perfect Macarons',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/small-cupcake-400x510.jpg',
                     name: 'Small Cupcake',
+                    price: '$ 19.00 - $ 29.00'
                 },
                 {
                     url: 'src/assets/img/strawberry-donut-400x510.jpg',
                     name: 'Strawberry Donut',
+                    price: '$ 19.00 - $ 29.00'
                 },
             ]
         }
@@ -100,6 +110,14 @@ export default {
 
         <img :src="item.url" :alt="item.name">
 
+        <div class="my-hover d-flex jc-center">
+
+            <h2>{{ item.name }}</h2>
+
+            <span>{{ item.price }}</span>
+
+        </div>
+
     </div>
 
     <button @click="nextBut()" class="next">
@@ -109,6 +127,44 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.card {
+    width: 400px;
+    height: 510px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover .my-hover {
+        visibility: visible;
+    }
+    .my-hover {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        h2 {
+            color: $fifthColor;
+            margin: 20px 0;
+            scale: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        span {
+            color: $fifthColor;
+            scale: 0;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    &:hover .my-hover h2 {
+        scale: 1;
+    }
+    &:hover .my-hover span {
+        scale: 1;;
+    }
+
+}
 .prev, .next {
     display: inline-block;
     width: 50px;
@@ -121,6 +177,7 @@ export default {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
 }
 .prev {
     left: 0;

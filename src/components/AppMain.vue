@@ -44,7 +44,6 @@ export default {
 
         <MainSectionSeven/>
 
-
     </main>
   
 </template>
