@@ -5,6 +5,7 @@ import MainSectionThree from './MainSectionThree.vue';
 import MainSectionFour from './MainSectionFour.vue';
 import MainSectionFive from './MainSectionFive.vue';
 import MainSectionSix from './MainSectionSix.vue';
+import MainSectionSeven from './MainSectionSeven.vue';
 
 export default {
     name: 'AppMain',
@@ -15,7 +16,8 @@ export default {
         MainSectionThree,
         MainSectionFour,
         MainSectionFive,
-        MainSectionSix
+        MainSectionSix,
+        MainSectionSeven
     }
 }
 </script>
@@ -37,8 +39,11 @@ export default {
             <MainSectionFive/>
 
             <MainSectionSix/>
-
+            
         </div>
+
+        <MainSectionSeven/>
+
 
     </main>
   

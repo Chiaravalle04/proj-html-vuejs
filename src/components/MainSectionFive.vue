@@ -124,7 +124,7 @@ section {
                 }
                 .a-button {
                     color: $firstColor;
-                    background-color: $secondColor;
+                    background-color: $fifthColor;
                     padding: 0 20px;
                 }
             }
