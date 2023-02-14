@@ -3,7 +3,7 @@ export default {
     name: 'AppNavBar',
 
     props: {
-        navHeader: Array,
+        nav: Array,
     }
 
 }
@@ -15,7 +15,7 @@ export default {
 
         <ul class="d-flex">
 
-            <li v-for="links in navHeader"> 
+            <li v-for="links in nav"> 
                 <a :href="links.url">{{ links.link }}</a>
             </li>
 

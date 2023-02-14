@@ -15,7 +15,7 @@ export default {
     data() {
         return {
 
-            navHeader: [
+            nav: [
                 {
                     url: '#',
                     link: 'home',
@@ -74,7 +74,7 @@ export default {
 
             <div class="nav-container d-flex">
 
-                <AppNavBar :navHeader="navHeader"/>
+                <AppNavBar :nav="nav"/>
 
                 <button>
                     <font-awesome-icon icon="fa-solid fa-cart-shopping"/>
