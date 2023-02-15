@@ -81,7 +81,7 @@ export default {
     .contact-us {
         position: relative;
         width: 50%;
-        background-color: $secondColor;
+        background-color: $fifthColor;
         padding: 60px 50px;
         border-radius: 15px;
         box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.51);
@@ -106,6 +106,7 @@ export default {
                 border-radius: 10px;
                 padding: 10px 15px;
                 margin: 0 10px;
+                background-color: $secondColor;
                 border: 1px solid $firstColor;
                 &:focus {
                     outline: none;
@@ -120,6 +121,7 @@ export default {
             border-radius: 10px;
             border: 1px solid $firstColor;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: $secondColor;
             &:focus {
                 outline: none;
                 border: 3px solid $firstColor;
