@@ -12,15 +12,13 @@ export default {
 
 <template>
 
-    <section class="d-flex ai-center">
+    <section id="shopping" class="d-flex ai-center">
 
         <div class="text">
 
             <h3>Find a freshly baked product perfect for you</h3>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rem hic et quo? Fugit ullam sequi aut ducimus architecto repellendus.</p>
-
-            <a class="a-button" href="#">shop all product</a>
 
         </div>
 
@@ -45,14 +43,6 @@ section {
             color: $firstColor;
             margin: 20px 0;
             font-size: 25px;
-        }
-        .a-button {
-            color: $fifthColor;
-            background-color: $firstColor;
-            &:hover {
-                color: $firstColor;
-                background-color: $secondColor;
-            }
         }
     }
     .slider-section-three {

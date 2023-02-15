@@ -44,7 +44,7 @@ export default {
 
                     <div class="button">
 
-                        <a class="a-button" href="#">view map</a>
+                        <a class="a-button" href="https://www.google.it/maps/place/565+Park+Ave,+New+York,+NY+10065,+Stati+Uniti/@40.7649791,-73.9701181,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ef0412616b:0x57088962fa6e72b3!8m2!3d40.7649791!4d-73.9679294!16s%2Fg%2F11bw3_p0f_">view map</a>
                         
                     </div>
 
@@ -79,7 +79,7 @@ export default {
 
                     <div class="button">
 
-                        <a class="a-button" href="#">view map</a>
+                        <a class="a-button" href="https://www.google.it/maps/place/4+Rose+and+Crown+Yard,+St.+James's,+London+SW1Y+6RE,+Regno+Unito/@51.506495,-0.1392803,17z/data=!3m1!4b1!4m5!3m4!1s0x487604d710bc711f:0x8777256fa9af3fa4!8m2!3d51.506495!4d-0.1370916">view map</a>
                         
                     </div>
 

@@ -21,7 +21,7 @@ export default {
 
             <h2 class="title-section">All our delectable pastries are backed fresh in our Kitchen very morning, and are made wuith all natural, all organic ingredients.</h2>
 
-            <a class="a-button" href="#">start shopping</a>
+            <a class="a-button" href="#shopping">start shopping</a>
 
         </div>
 

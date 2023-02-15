@@ -1,18 +1,34 @@
 <script>
 export default {
     name: 'AppForm',
+
+    data() {
+        return {
+            active: false,
+            string: '',
+        }
+    },
+
+    methods: {
+        subscribe() {
+            this.active = true;
+            this.string = ''
+        }
+    }
 }
 </script>
 
 <template>
 
-    <form action="#">
+    <form action="#" @click.prevent="">
 
-        <input type="email" placeholder="Enter email address..." required>
+        <input type="email" v-model="string" placeholder="Enter email address..." required>
 
-        <button type="submit">Subscribe</button>
+        <button @click="subscribe()" type="submit">Subscribe</button>
 
     </form>
+
+    <p v-if="active"><font-awesome-icon icon="fa-solid fa-check" /> Thanks for subscribing</p>
   
 </template>
 
@@ -41,5 +57,10 @@ form {
         margin-left: 5px;
         cursor: pointer;
     }
+}
+p {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
 }
 </style>

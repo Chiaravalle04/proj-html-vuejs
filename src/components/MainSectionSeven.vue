@@ -16,7 +16,7 @@ export default {
     
                 <h2>Order for pick-up or delivery to your home</h2>
     
-                <a class="a-button" href="#">shop now</a>
+                <a class="a-button" href="#shopping">shop now</a>
     
             </div>
 

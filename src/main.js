@@ -16,6 +16,8 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faPinterestP } from '@fortawesome/free-brands-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(
@@ -28,6 +30,8 @@ library.add(
     faPinterestP,
     faPlus,
     faArrowUp,
+    faCheck,
+    faXmark
 )
 
 createApp(App)

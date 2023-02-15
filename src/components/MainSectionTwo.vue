@@ -1,6 +1,13 @@
 <script>
+import AppContactUs from './AppContactUs.vue';
+
 export default {
     name: 'MainSectionTwo',
+
+    components: {
+        AppContactUs,
+    },
+
 }
 </script>
 
@@ -28,7 +35,7 @@ export default {
 
                     <h2>Corporate Events</h2>
 
-                    <a class="a-button" href="">explore more</a>
+                    <AppContactUs/>
 
                 </div>
 
@@ -44,7 +51,7 @@ export default {
 
                     <h2>Wedding & Parties</h2>
 
-                    <a class="a-button" href="">explore more</a>
+                    <AppContactUs/>
 
                 </div>
 
@@ -89,13 +96,6 @@ section {
                     margin: 40px 0;
                     font-size: 30px;
                 }
-                .a-button {
-                    width: 150px;
-                    margin: 0 auto;
-                    color: $fifthColor;
-                    background-color: $firstColor;
-                }
-                
             }
             .bg-left {
                 background-image: url('../assets/img/corporate-hover-bg.jpg');

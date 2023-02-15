@@ -4,15 +4,11 @@ export default {
 
     data() {
         return {
-
             counter: 0,
-
             active: false,
-
+            showCart: false,
             firstImg: 0,
-
             lastImg: 4,
-
             slider: [
                 {
                     url: 'src/assets/img/choco-chip-cookies-200x255.jpg',
@@ -108,6 +104,30 @@ export default {
 
             this.active = true;
         
+        },
+
+        showCartBlock () {
+
+            if (this.showCart == false) {
+
+                this.showCart = true;
+
+            } else {
+
+                this.showCart = false;
+
+            }
+
+        },
+
+        deleteProducts() {
+
+            this.counter = 0;
+
+            this.active = false;
+
+            this.showCart = false;
+
         }
     }
 
@@ -150,9 +170,21 @@ export default {
         <font-awesome-icon icon="fa-solid fa-chevron-right"/>
     </button>
 
-    <button class="shop">
+    <button class="shop" @click="showCartBlock()">
         <span v-if="active">{{ counter }}</span>
     </button>
+
+    <div class="cart" v-if="showCart">
+
+        <button @click="deleteProducts()" class="delete">
+            Delete
+        </button>
+
+        <button class="pay">
+            Pay Now
+        </button>
+
+    </div>
 
 </template>
 
@@ -269,6 +301,34 @@ export default {
         background-color: red;
         line-height: 20px;
         font-weight: bold;
+    }
+}
+
+.cart {
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+    background-color: $fifthColor;
+    border-radius: 13px;
+    bottom: 15px;
+    right: 65px;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.51);
+    button {
+        display: inline-block;
+        width: calc(100% / 2);
+        height: 30px;
+        border: 2px solid $fifthColor;
+        border-radius: 5px;
+        color: $fifthColor;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .delete {
+        background-color: red; 
+    }
+    .pay {
+        background-color: $firstColor; 
     }
 }
 </style>
