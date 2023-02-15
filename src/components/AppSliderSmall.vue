@@ -5,6 +5,10 @@ export default {
     data() {
         return {
 
+            counter: 0,
+
+            active: false,
+
             firstImg: 0,
 
             lastImg: 4,
@@ -96,6 +100,14 @@ export default {
 
             }
 
+        },
+
+        addCart () {
+
+            this.counter++;
+
+            this.active = true;
+        
         }
     }
 
@@ -118,7 +130,7 @@ export default {
 
                 <h4>Add to cart</h4>
 
-                <button type="button"><font-awesome-icon icon="fa-solid fa-plus" /></button>
+                <button @click="addCart()" type="button"><font-awesome-icon icon="fa-solid fa-plus" /></button>
 
             </div>
 
@@ -136,6 +148,10 @@ export default {
 
     <button @click="nextBut()" class="next">
         <font-awesome-icon icon="fa-solid fa-chevron-right"/>
+    </button>
+
+    <button class="shop">
+        <span v-if="active">{{ counter }}</span>
     </button>
 
 </template>
@@ -224,5 +240,35 @@ export default {
 }
 .next {
     right: 0;
+}
+.shop {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../assets/img/shop_.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    color: $fifthColor;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.51);
+    z-index: 99;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        line-height: 20px;
+        font-weight: bold;
+    }
 }
 </style>

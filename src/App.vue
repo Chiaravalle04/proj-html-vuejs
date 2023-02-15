@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import LinkBackToTop from './components/LinkBackToTop.vue';
 
 export default {
     name: 'App',
@@ -9,7 +10,8 @@ export default {
     components: {
         AppHeader,
         AppMain,
-        AppFooter
+        AppFooter,
+        LinkBackToTop
     },
 }
 </script>
@@ -21,6 +23,8 @@ export default {
     <AppMain/>
 
     <AppFooter/>
+
+    <LinkBackToTop/>
   
 </template>
 
