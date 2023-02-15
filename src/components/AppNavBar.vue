@@ -30,9 +30,6 @@ nav {
     ul {
         li {
             margin: 0 5px;
-            &:first-child a {
-                border-bottom: 3px solid $firstColor;
-            }
             a {
                 text-transform: uppercase;
                 font-weight: bold;
