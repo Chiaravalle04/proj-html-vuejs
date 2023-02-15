@@ -35,9 +35,6 @@ export default {
     .a-button {
         color: $firstColor;
         background-color: $fifthColor;
-        padding: 0 20px;
-        margin: 20px 0;
-        transition: all 0.3s ease-in-out;
         &:hover {
             color: $secondColor;
             background-color: $firstColor;

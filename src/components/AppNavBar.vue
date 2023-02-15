@@ -19,6 +19,10 @@ export default {
                 <a :href="links.url">{{ links.link }}</a>
             </li>
 
+            <button>
+                <font-awesome-icon icon="fa-solid fa-cart-shopping"/>
+            </button>
+
         </ul>
 
     </nav>
@@ -41,6 +45,16 @@ nav {
                 color: $firstColor;
             }
         }
+        button {
+            display: inline-block;
+            background: none;
+            border: none;
+            color: $firstColor;
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
     }
 }
 </style>

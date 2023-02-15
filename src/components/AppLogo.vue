@@ -1,12 +1,18 @@
 <script>
 export default {
     name: 'AppLogo',
+
+    data() {
+        return {
+            logo: 'src/assets/img/avada-bakery-logo.png',
+        }
+    }
 }
 </script>
 
 <template>
 
-    <img src="../assets/img/avada-bakery-logo.png" alt="Logo Backery">
+    <img :src="logo" alt="Logo Backery">
   
 </template>
 

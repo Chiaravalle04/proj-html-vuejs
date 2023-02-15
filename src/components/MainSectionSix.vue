@@ -1,6 +1,31 @@
 <script>
 export default {
     name: 'MainSectionSix',
+
+    data() {
+        return {
+            imgStaticLeft: 'src/assets/img/social-1.jpg',
+            imgStaticRigth: 'src/assets/img/social-2.jpg',
+            imgSocial: [
+                {
+                    name: 'social',
+                    url:'src/assets/img/social-3.jpg'
+                },
+                {
+                    name: 'social',
+                    url:'src/assets/img/social-4.jpg'
+                },
+                {
+                    name: 'social',
+                    url:'src/assets/img/social-5.jpg'
+                },
+                {
+                    name: 'social',
+                    url:'src/assets/img/social-6.jpg'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -14,7 +39,7 @@ export default {
                 
                 <div class="card">
 
-                    <img src="../assets/img/social-1.jpg" alt="">
+                    <img :src="imgStaticLeft" alt="">
     
                 </div>
     
@@ -34,7 +59,7 @@ export default {
                 
                 <div class="card">
 
-                    <img src="../assets/img/social-2.jpg" alt="">
+                    <img :src="imgStaticRigth" alt="">
                     
                 </div>
     
@@ -42,27 +67,9 @@ export default {
      
             <div class="container-down d-flex">
     
-                <div class="card">
+                <div class="card" v-for="img in imgSocial">
 
-                    <img src="../assets/img/social-3.jpg" alt="">
-                    
-                </div>
-                
-                <div class="card">
-
-                    <img src="../assets/img/social-4.jpg" alt="">
-                    
-                </div>
-
-                <div class="card">
-
-                    <img src="../assets/img/social-5.jpg" alt="">
-                    
-                </div>
-
-                <div class="card">
-
-                    <img src="../assets/img/social-6.jpg" alt="">
+                    <img :src="img.url" :alt="img.name">
                     
                 </div>
     
@@ -96,8 +103,6 @@ section {
                     .a-button {
                         color: $fifthColor;
                         background-color: $firstColor;
-                        padding: 0 20px;
-                        transition: all 0.3s ease-in-out;
                         &:hover {
                             color: $firstColor;
                             background-color: $fifthColor;

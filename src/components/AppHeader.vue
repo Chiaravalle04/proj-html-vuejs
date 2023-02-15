@@ -76,10 +76,6 @@ export default {
 
                 <AppNavBar :nav="nav"/>
 
-                <button>
-                    <font-awesome-icon icon="fa-solid fa-cart-shopping"/>
-                </button>
-
             </div>
 
         </div>
@@ -109,17 +105,6 @@ header {
         justify-content: space-between;
         .logo-container {
             width: 150px;
-        }
-        .nav-container {
-            button {
-                display: inline-block;
-                background: none;
-                border: none;
-                color: $firstColor;
-                font-size: 20px;
-                margin-left: 15px;
-                cursor: pointer;
-            }
         }
     }
     .jumbotron {

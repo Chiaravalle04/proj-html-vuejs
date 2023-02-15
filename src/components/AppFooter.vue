@@ -1,13 +1,15 @@
 <script>
 import AppLogo from './AppLogo.vue';
 import AppNavBar from './AppNavBar.vue';
+import AppForm from './AppForm.vue';
 
 export default {
     name: 'AppFooter',
 
     components: {
         AppLogo,
-        AppNavBar
+        AppNavBar,
+        AppForm
     },
 
     data() {
@@ -48,6 +50,29 @@ export default {
                 },
             ],
 
+            icons: [
+                {
+                    name: 'instagram',
+                    icon: 'fa-brands fa-instagram',
+                    url: '#'
+                },
+                {
+                    name: 'twitter',
+                    icon: 'fa-brands fa-twitter',
+                    url: '#'
+                },
+                {
+                    name: 'facebook',
+                    icon: 'fa-brands fa-facebook-f',
+                    url: '#'
+                },
+                {
+                    name: 'pinterest',
+                    icon: 'fa-brands fa-pinterest-p',
+                    url: '#'
+                },
+            ]
+
         }
     }
 }
@@ -77,10 +102,6 @@ export default {
     
                         <AppNavBar :nav="nav"/>
     
-                        <button>
-                            <font-awesome-icon icon="fa-solid fa-cart-shopping"/>
-                        </button>
-    
                     </div>
                         
                 </div>
@@ -89,13 +110,7 @@ export default {
     
                     <h3>Subscribe to our Newsletter</h3>
     
-                    <form action="#">
-    
-                        <input type="email" placeholder="Enter email address..." required>
-    
-                        <button type="submit">Subscribe</button>
-    
-                    </form>
+                    <AppForm/>
     
                 </div>
 
@@ -107,20 +122,8 @@ export default {
 
                 <div class="icon">
 
-                    <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-instagram" />
-                    </a>
-
-                    <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
-                    </a>
-
-                    <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                    </a>
-
-                    <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-pinterest-p" />
+                    <a :href="icon.url" v-for="icon in icons">
+                        <font-awesome-icon :icon="icon.icon" />
                     </a>
 
                 </div>
@@ -143,17 +146,6 @@ footer {
             width: 150px;
             margin-bottom: 45px;
         }
-        .nav-container {
-            button {
-                display: inline-block;
-                background: none;
-                border: none;
-                color: $firstColor;
-                font-size: 20px;
-                margin-left: 15px;
-                cursor: pointer;
-            }
-        }
     }
     .container-rigth {
         width: 40%;
@@ -163,30 +155,6 @@ footer {
             color: $firstColor;
             font-size: 20px;
             margin-bottom: 45px;
-        }
-        form {
-            input {
-                display: inline-block;
-                width: 400px;
-                height: 40px;
-                padding: 10px 20px;
-                border-radius: 10px;
-                border: none;
-                &:focus {
-                    outline: none;
-                }
-            }
-            button {
-                display: inline-block;
-                height: 40px;
-                padding: 10px;
-                border-radius: 10px;
-                background-color: $firstColor;
-                border: none;
-                color: $fifthColor;
-                margin-left: 5px;
-                cursor: pointer;
-            }
         }
     }
     .container-down {
@@ -202,5 +170,4 @@ footer {
         }
     }
 }
-
 </style>

@@ -73,8 +73,10 @@ export default {
                 this.lastImg = 4;
 
             } else {
+
                 this.firstImg++;
                 this.lastImg++;
+            
             }
 
         },

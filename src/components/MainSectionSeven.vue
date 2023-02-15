@@ -36,7 +36,6 @@ section {
     .text {
         width: 900px;
         height: 100%;
-        padding-left: 200px;
         h2 {
             font-size: 50px;
             color: $fifthColor;
@@ -45,8 +44,6 @@ section {
         .a-button {
             color: $firstColor;
             background-color: $fifthColor;
-            padding: 0 20px;
-            transition: all 0.3s ease-in-out;
             &:hover {
                 color: $secondColor;
                 background-color: $firstColor;

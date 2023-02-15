@@ -49,9 +49,6 @@ section {
         .a-button {
             color: $fifthColor;
             background-color: $firstColor;
-            padding: 0 20px;
-            margin: 20px 0;
-            transition: all 0.3s ease-in-out;
             &:hover {
                 color: $firstColor;
                 background-color: $secondColor;
