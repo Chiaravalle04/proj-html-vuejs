@@ -31,7 +31,7 @@ export default {
 
 <template>
 
-    <section>
+    <section id="social">
 
         <div class="container">
 

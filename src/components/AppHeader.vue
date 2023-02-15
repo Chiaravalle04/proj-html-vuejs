@@ -21,27 +21,23 @@ export default {
                     link: 'home',
                 },
                 {
-                    url: '#',
+                    url: '#shopping',
                     link: 'shop',
                 },
                 {
-                    url: '#',
+                    url: '#about',
                     link: 'about',
                 },
                 {
-                    url: '#',
-                    link: 'gallery',
+                    url: '#social',
+                    link: 'social',
                 },
                 {
-                    url: '#',
+                    url: '#location',
                     link: 'locations',
                 },
                 {
-                    url: '#',
-                    link: 'journal',
-                },
-                {
-                    url: '#',
+                    url: '#contact',
                     link: 'contact',
                 },
                 {

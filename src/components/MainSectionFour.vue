@@ -6,7 +6,7 @@ export default {
 
 <template>
 
-    <section>
+    <section id="about">
 
         <div class="container-first">
             

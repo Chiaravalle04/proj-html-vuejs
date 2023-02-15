@@ -18,6 +18,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(
@@ -31,7 +32,8 @@ library.add(
     faPlus,
     faArrowUp,
     faCheck,
-    faXmark
+    faXmark,
+    faArrowDown
 )
 
 createApp(App)

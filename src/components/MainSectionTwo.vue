@@ -13,13 +13,23 @@ export default {
 
 <template>
 
-    <section id="corporate-and-weddings">
+    <section id="contact">
 
         <div class="text">
 
             <h5>corporate & weddings</h5>
 
             <h2 class="title-section">Backing Special Moments</h2>
+
+            <div class="help-hover d-flex jc-center">
+
+                <span><font-awesome-icon icon="fa-solid fa-arrow-down" /></span>
+
+                <p>  hover over the images </p>
+
+                <span><font-awesome-icon icon="fa-solid fa-arrow-down" /></span>
+
+            </div>
 
         </div>
 
@@ -69,6 +79,16 @@ section {
     .text {
         text-align: center;
         margin: 0 auto;
+        .help-hover {
+            width: 100%;
+            margin: 20px 0;
+            text-transform: uppercase;
+            color: $textColor;
+            p {
+                font-size: 12px;
+                margin: 0 20px;
+            }
+        }
     }
     .container-img {
         gap: 50px;
