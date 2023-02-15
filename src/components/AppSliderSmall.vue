@@ -110,11 +110,27 @@ export default {
   
     <div class="card" v-for="item in slider.slice(firstImg, lastImg)">
 
-        <img :src="item.url" :alt="item.name">
+        <div class="container-img">
 
-        <h3>{{ item.name }}</h3>
+            <img :src="item.url" :alt="item.name">
 
-        <span>{{ item.price }}</span>
+            <div class="my-hover d-flex jc-center ai-center">
+
+                <h4>Add to cart</h4>
+
+                <button type="button"><font-awesome-icon icon="fa-solid fa-plus" /></button>
+
+            </div>
+
+        </div>
+
+        <div class="text">
+
+            <h3>{{ item.name }}</h3>
+
+            <span>{{ item.price }}</span>
+
+        </div>
 
     </div>
 
@@ -129,14 +145,64 @@ export default {
     text-align: center;
     height: 100%;
     width: 200px;
-    h3 {
-        font-size: 17px;
-        margin: 10px 0;
-        color: $firstColor;
+    transition: all 0.3s ease-in-out;
+    &:hover .my-hover {
+        visibility: visible;
     }
-    span {
-        color: $textColor;
-        font-size: 12px;
+    .container-img {
+        width: 100%;
+        height: 70%;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .my-hover {
+            background-color: rgba(0, 0, 0, 0.3);
+            top: 0;
+            left: 0;
+            h4 {
+                color: $fifthColor;
+                margin-bottom: 20px;
+                text-transform: capitalize;
+                scale: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            button {
+                display: block;
+                width: 40px;
+                height: 40px;
+                font-size: 17px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: $fifthColor;
+                background-color: $firstColor;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                scale: 0;
+                transition: all 0.3s ease-in-out;
+            } 
+        }
+    }
+    &:hover .my-hover h4 {
+        scale: 1;
+        }
+    &:hover .my-hover button {
+        scale: 1;
+    }
+    .text {
+        height: 20%;
+        h3 {
+            font-size: 17px;
+            margin: 20px 0 10px;
+            color: $firstColor;
+        }
+        span {
+            color: $textColor;
+            font-size: 12px;
+        }
     }
 }
 .prev, .next {
@@ -151,6 +217,7 @@ export default {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
 }
 .prev {
     left: 0;

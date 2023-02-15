@@ -112,7 +112,7 @@ section {
             h3 {
                 color: $firstColor;
                 font-size: 30px;
-                margin: 20px 0;
+                margin: 20px 0 0 0;
             }
             .text {
                 justify-content: space-around;

@@ -124,6 +124,7 @@ section {
                 color: $firstColor;
                 line-height: 40px;
                 margin: 60px 0;
+                font-family: 'Playfair Display', serif;
             }
             span {
                 color: $textColor;

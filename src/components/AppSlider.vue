@@ -136,11 +136,6 @@ export default {
         visibility: visible;
     }
     .my-hover {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        visibility: hidden;
-        position: absolute;
         top: 0;
         left: 0;
         text-align: center;

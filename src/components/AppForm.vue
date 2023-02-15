@@ -34,6 +34,7 @@ form {
         height: 40px;
         padding: 10px;
         border-radius: 10px;
+        font-weight: bold;
         background-color: $firstColor;
         border: none;
         color: $fifthColor;
